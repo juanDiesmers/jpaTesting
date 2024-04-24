@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/grupo12/css/Login.css">
+  </head>
+  <body>
+    <section class="container">
+
+      <div class="image-section">
+        <div class="image-wrapper">
+          <img src="/grupo12/img/mesh-gradient.png" alt="">
+        </div>
+
+        <div class="content-container">
+          <h1 class="section-heading">Mas y mejores  <span>Fincas.</span></h1>
+          <p class="section-paragraph">Cada paso mas adelante.</p>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <div class="form-wrapper">
+          <div class="logo-container">
+            <a href="#" class="logo-container">
+              <img src="/grupo12/img/logo.png" alt="Logo">
+            </a>
+          </div>
+
+          <h2>Bienvenido de vuelta! 👋🏻</h2>
+          <p>Ingresa tus credenciales.</p>
+
+          <div class="input-container">
+            <div class="form-group">
+              <label for="email">Correo</label>
+              <input type="email" id="email" autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label for="password">Contraseña</label>
+              <input type="password" id="password">
+            </div>
+          </div>
+
+          <div class="remember-forgot">
+            <div class="remember-me">
+              <input type="checkbox" value="remember-me" id="remember-me">
+              <label for="remember-me">Recuerdame</label>
+            </div>
+
+            <a href="#">Forgot password?</a>
+          </div>
+
+          <button class="login-btn">Ingresar</button>
+          <button class="register-btn" onclick="toggleForms()">Registrarse</button>
+
+          <div class="or-divider">or</div>
+
+          <div class="home-button">
+            <a href="Home">Home </a>
+          </div>
+        </div>
+        <div class="form-wrapper register-form" style="display:none;">
+            <h2>Crear Cuenta</h2>
+            <p>Completa tus datos.</p>
+            <div class="input-container">
+                <div class="form-group">
+                    <label for="new-firstname">Nombres *</label>
+                    <input type="text" id="new-firstname" required>
+                </div>
+                <div class="form-group">
+                    <label for="new-lastname">Apellidos *</label>
+                    <input type="text" id="new-lastname" required>
+                </div>
+                <div class="form-group">
+                    <label for="new-email">Correo electrónico *</label>
+                    <input type="email" id="new-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="new-phone">Teléfono</label>
+                    <input type="text" id="new-phone" pattern="[0-9]+" title="Por favor, ingrese solo números">
+                </div>
+                <div class="form-group">
+                    <label for="new-password">Contraseña *</label>
+                    <input type="password" id="new-password" required minlength="8">
+                </div>
+                <div class="form-group">
+                  <label for="user-type">Tipo de usuario:</label>
+                  <div id="user-type">
+                      <input type="radio" id="arrendador" name="user-type" value="arrendador" required>
+                      <label for="arrendador">Arrendador</label>
+                      <input type="radio" id="arrendatario" name="user-type" value="arrendatario" required>
+                      <label for="arrendatario">Arrendatario</label>
+                  </div>
+              </div>
+            </div>
+            <button class="login-btn" onclick="registrarArrendador()">Registrar</button>
+          </div>
+      </div>
+    </section>
+    <script src="/grupo12/js/Login.js"></script>
+  </body>
+</html>
+

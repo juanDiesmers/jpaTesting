@@ -1,0 +1,130 @@
+/* Estilos globales */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  background-color: #4CAF50;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  position: relative; /* Agregado */
+}
+
+header h1 {
+  font-size: 36px;
+  margin-top: 0;
+}
+
+header p {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+/* Botones de navegación */
+nav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 10px;
+}
+
+nav ul li a {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #45a049;
+}
+
+/* Main */
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 28px;
+  color: #ffffff;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 28px;
+  color: #4CAF50;
+}
+
+.group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Person */
+.person {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.person:hover {
+  transform: translateY(-5px);
+}
+
+.person img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.person h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #4CAF50;
+}
+
+.person p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Footer */
+footer {
+  background-color: #4CAF50;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
